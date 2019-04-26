@@ -1,0 +1,29 @@
+.header {
+  margin: 50px 0;
+  font-style: $main-font;
+}
+.title {
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 15px;
+  text-decoration: none;
+}
+.menu {
+  letter-spacing: 8px;
+  align-items: center;
+  justify-content: flex-end;
+  a {
+    color: $header-menu-text-color;
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+  .active {
+    color: $header-text-active-color;
+  }
+}
+
+.name {
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+}

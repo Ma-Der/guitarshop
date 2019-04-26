@@ -9,6 +9,7 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Regulations from './components/Regulations';
 import NotFound from './components/NotFound';
+import './sass/style.scss';
 
 class App extends React.Component {
   render(){

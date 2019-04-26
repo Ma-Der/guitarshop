@@ -7,7 +7,9 @@ class Main extends React.Component {
     return (
       <div className='container'>
         <Header />
+        <div className="main">
         {this.props.children}
+        </div>
         <Footer />
       </div>
     );

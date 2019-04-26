@@ -13,12 +13,12 @@
   align-items: center;
   justify-content: flex-end;
   a {
-    color: $header-menu-text-color;
+    color: $menu-text-color;
     padding: 5px 20px;
     text-decoration: none;
   }
   .active {
-    color: $header-text-active-color;
+    color: $text-active-color;
   }
 }
 

@@ -2,7 +2,11 @@
 @import 'variables';
 @import 'layout';
 
+@import './sections/main';
 @import './sections/header';
+@import './sections/footer';
+@import './sections/home';
+
 
 .container {
   max-width: 1200px;

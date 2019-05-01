@@ -1,12 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const GuitarItem = ({guitar}) => {
   return (
-    <li>
-      <img src={guitar.image} alt={guitar.title}/>
-      <div>Cena: {guitar.price}</div>
-    </li>
+    <div className="guitar">
+      <Link to={'/product/' + guitar.id} className="guitar-container">
+        <img className="guitar-image" src={guitar.image} alt={guitar.title}/>
+      </Link>
+      <h3>{guitar.title}</h3>
+      <h4 className="guitar-price">Price: <span>{guitar.price}</span> zł</h4>
+    </div>
   );
 }
 

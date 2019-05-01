@@ -2,7 +2,12 @@
 @import 'variables';
 @import 'layout';
 
+
 @import './sections/main';
+@import './sections/guitarList';
+@import './sections/guitarItem';
+@import './sections/sort';
+@import './sections/product';
 @import './sections/header';
 @import './sections/footer';
 @import './sections/home';

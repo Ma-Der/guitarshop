@@ -3,8 +3,8 @@ import GuitarItem from './GuitarItem';
 
 const GuitarsList = ({guitars}) => {
   return (
-    <div>
-      {guitars.map(guit => <GuitarItem guitar={guit} key={guit.id}></GuitarItem>)}
+    <div className="guitar-list">
+      {guitars.map(guit => <GuitarItem guitar={guit} key={guit.id} />)}
     </div>
   );
 }

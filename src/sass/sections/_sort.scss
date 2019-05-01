@@ -1,0 +1,13 @@
+.sort-container {
+  border-bottom: 1px solid $menu-text-color;
+  max-height: 250px;
+  max-width: 200px;
+  width: 100%;
+  font-style: $main-font;
+  .sort-option {
+    color: $menu-text-color;
+    font-weight: 350;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+}

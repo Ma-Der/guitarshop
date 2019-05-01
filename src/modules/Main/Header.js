@@ -13,6 +13,9 @@ const Header = () => {
           <NavLink to='/faq' activeClassName="active">FAQ</NavLink>
           <NavLink to='/regulations' activeClassName="active">REGULATIONS</NavLink>
           <NavLink to='/contact' activeClassName="active">CONTACT</NavLink>
+          <NavLink to='/cart' activeClassName="active">
+            <i class="fas fa-shopping-cart"></i>
+          </NavLink>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ class CartContainer extends React.Component {
   }
   render() {
     return (
-      <div className="flag"></div>
+      <div></div>
     );
   }
 }

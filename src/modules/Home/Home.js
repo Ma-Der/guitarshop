@@ -14,28 +14,19 @@ class Home extends Component {
     this.props.getGuitars(this.props.match.params.currentPage !== undefined ? parseInt(this.props.match.params.currentPage) -1 : undefined);
   }
 
-/*  componentDidUpdate(prevProps, prevState, snapshot) {
+  componentDidUpdate(prevProps, prevState, snapshot) {
     if(prevProps.location.pathname !== this.props.location.pathname) {
       this.props.getGuitars(this.props.match.params.currentPage !== undefined ? parseInt(this.props.match.params.currentPage) -1 : undefined);
     }
-  } */
-  componentDidUpdate(prevProps,prevState, snapshot) {
-      console.log('matchParams - componentDidUpdate', this.props.location,prevProps.location);
-      if (prevProps.location.pathname !== this.props.location.pathname) {
-          const matchParams = this.props.match.params;
-          console.log('componentDidUpdate - firing getbooks', prevProps.location);
-          this.props.getGuitars(matchParams.currentPage !== undefined
-              ? parseInt(matchParams.currentPage) - 1
-              : undefined);
-      }
   }
+
   render() {
     return (
       <div className="home row" id="home">
-        <div className="col-6">
+        <div className="col-2">
           <Sort />
         </div>
-        <div className="col-6">
+        <div className="col-10 guitars-list">
           <GuitarsList guitars= {this.props.guitars} />
           <Pagination pages={this.props.pages} currentPage={this.props.currentPage} />
         </div>

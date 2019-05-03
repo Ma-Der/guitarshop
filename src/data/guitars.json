@@ -14,7 +14,8 @@
     "pickups": "Custom Shop Fat 50, Custom Shop 69, Seymour Duncan SSL5",
     "color": "Black",
     "image": "/images/01.jpg",
-    "price": 19555.94
+    "price": 19555.94,
+    "tag": "NEW"
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
     "pickups": "Vintage Noiseless",
     "color": "Red",
     "image": "/images/02.jpg",
-    "price": 8152.96
+    "price": 8152.96,
+    "tag": ""
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
     "pickups": "Di Marzio FS-1 and 2 Custom Stagger Fat 50s",
     "color": "Black",
     "image": "/images/03.jpg",
-    "price": 6547.27
+    "price": 6547.27,
+    "tag": "last item"
   },
   {
     "id": 4,
@@ -65,7 +68,8 @@
     "pickups": "Gibson 490R (neck) and 498T (bridge) humbuckers",
     "color": "Black",
     "image": "/images/04.jpg",
-    "price": 14786.09
+    "price": 14786.09,
+    "tag": ""
   },
   {
     "id": 5,
@@ -82,7 +86,8 @@
     "pickups": "2 Tremonti humbuckers",
     "color": "Grey Black",
     "image": "/images/05.jpg",
-    "price": 15880.88
+    "price": 15880.88,
+    "tag": ""
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
     "pickups": "2 active Fishman Fluence modern humbuckers",
     "color": "White",
     "image": "/images/06.jpg",
-    "price": 9870.27
+    "price": 9870.27,
+    "tag": ""
   },
   {
     "id": 7,
@@ -116,7 +122,8 @@
     "pickups": "2 Chapman Primordial humbuckers",
     "color": "Transparent Blue",
     "image": "/images/07.jpg",
-    "price": 4289
+    "price": 4289,
+    "tag": ""
   },
   {
     "id": 8,
@@ -133,7 +140,8 @@
     "pickups": "2x Jackson High Output Zebra humbucker",
     "color": "White with Black Bevels",
     "image": "/images/08.jpg",
-    "price": 1481.19
+    "price": 1481.19,
+    "tag": "NEW"
   },
   {
     "id": 9,
@@ -150,7 +158,8 @@
     "pickups": "2 Duncan HB114-6 humbuckers",
     "color": "Flamed Solar Burst",
     "image": "/images/09.jpg",
-    "price": 4074.33
+    "price": 4074.33,
+    "tag": "NEW"
   },
   {
     "id": 10,
@@ -167,6 +176,7 @@
     "pickups": "1 Humbucker (bridge) and LR Baggs piezo pickup",
     "color": "Antique Ash",
     "image": "/images/10.jpg",
-    "price": 5576.98
+    "price": 5576.98,
+    "tag": "NEW"
   }
 ]

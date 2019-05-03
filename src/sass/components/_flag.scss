@@ -1,0 +1,20 @@
+.flag {
+  border-top: 80px solid #2bf410;
+  border-right: 46px solid transparent;
+  border-left: 46px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .flag-item {
+    position: absolute;
+    color: #ff2;
+    bottom: 40px;
+    left: -17px;
+    z-index: 400;
+    font-size: 15px;
+    margin: 10px auto 0;
+    text-transform: uppercase;
+  }
+}

@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
   .product-title {
     display: flex;
     padding: 10px;
@@ -19,13 +20,22 @@
   flex-wrap: wrap;
   .product-price {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: #c1f40e;
+    border-radius: 50px;
     color: #4a4b46;
     font-size: 25px;
     max-height: 100px;
+    margin: 0;
+    padding: 0;
     width: 100%;
+    .price-tag {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
   }
   .product-add {
     background-color: #536907;

@@ -14,7 +14,7 @@ const Header = () => {
           <NavLink to='/regulations' activeClassName="active">REGULATIONS</NavLink>
           <NavLink to='/contact' activeClassName="active">CONTACT</NavLink>
           <NavLink to='/cart' activeClassName="active">
-            <i class="fas fa-shopping-cart"></i>
+            <i className="fas fa-shopping-cart"></i>
           </NavLink>
         </div>
       </div>

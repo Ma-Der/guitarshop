@@ -8,9 +8,9 @@ export function getGuitar(guitarId) {
   }
 }
 
-export function getGuitars() {
+export function getGuitars(currentPage) {
   return {
     type: GET_GUITARS,
-    
+    currentPage
   }
 }

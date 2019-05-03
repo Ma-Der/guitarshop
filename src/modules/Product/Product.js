@@ -7,6 +7,7 @@ const Product = ({pickedGuitar}) => {
         <img src={pickedGuitar.image} alt={pickedGuitar.title}/>
       </div>
       <div className="col-8 description">
+        {pickedGuitar.tag !== "" ? <div className="flag"><p className="flag-item">{pickedGuitar.tag}</p></div> : null }
         <h3 className="product-title">{pickedGuitar.title}</h3>
         <ul className="product-list">
           <li>Body: {pickedGuitar.body}</li>
@@ -23,8 +24,11 @@ const Product = ({pickedGuitar}) => {
         </ul>
       </div>
       <div className="col-2 product-buy">
-          <h4 className="product-price">Price: {pickedGuitar.price} zł</h4>
-          <button className="product-add">Add To Cart</button>
+        <h4 className="product-price">
+          <div className="price-tag">Price:</div>
+          {pickedGuitar.price} zł
+        </h4>
+        <button className="product-add"><h3>Add To Cart</h3></button>
       </div>
     </div>
   );

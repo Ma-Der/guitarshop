@@ -1,0 +1,22 @@
+.modal-sum {
+  background-color: green;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+  max-height: 100%;
+}
+.sum-image {
+  margin: 5px;
+}
+#modal-head {
+  position: relative;
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

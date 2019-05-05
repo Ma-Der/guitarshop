@@ -14,6 +14,7 @@
     "pickups": "Custom Shop Fat 50, Custom Shop 69, Seymour Duncan SSL5",
     "color": "Black",
     "image": "/images/01.jpg",
+    "miniature": "/images/01_1.jpg",
     "price": 19555.94,
     "tag": "NEW"
   },
@@ -32,6 +33,7 @@
     "pickups": "Vintage Noiseless",
     "color": "Red",
     "image": "/images/02.jpg",
+    "miniature": "/images/02_2.jpg",
     "price": 8152.96,
     "tag": ""
   },
@@ -50,6 +52,7 @@
     "pickups": "Di Marzio FS-1 and 2 Custom Stagger Fat 50s",
     "color": "Black",
     "image": "/images/03.jpg",
+    "miniature": "/images/03_3.jpg",
     "price": 6547.27,
     "tag": "last item"
   },
@@ -68,6 +71,7 @@
     "pickups": "Gibson 490R (neck) and 498T (bridge) humbuckers",
     "color": "Black",
     "image": "/images/04.jpg",
+    "miniature": "/images/04_4.jpg",
     "price": 14786.09,
     "tag": ""
   },
@@ -86,6 +90,7 @@
     "pickups": "2 Tremonti humbuckers",
     "color": "Grey Black",
     "image": "/images/05.jpg",
+    "miniature": "/images/05_5.jpg",
     "price": 15880.88,
     "tag": ""
   },
@@ -104,6 +109,7 @@
     "pickups": "2 active Fishman Fluence modern humbuckers",
     "color": "White",
     "image": "/images/06.jpg",
+    "miniature": "/images/06_6.jpg",
     "price": 9870.27,
     "tag": ""
   },
@@ -122,6 +128,7 @@
     "pickups": "2 Chapman Primordial humbuckers",
     "color": "Transparent Blue",
     "image": "/images/07.jpg",
+    "miniature": "/images/07_7.jpg",
     "price": 4289,
     "tag": ""
   },
@@ -140,6 +147,7 @@
     "pickups": "2x Jackson High Output Zebra humbucker",
     "color": "White with Black Bevels",
     "image": "/images/08.jpg",
+    "miniature": "/images/08_8.jpg",
     "price": 1481.19,
     "tag": "NEW"
   },
@@ -158,6 +166,7 @@
     "pickups": "2 Duncan HB114-6 humbuckers",
     "color": "Flamed Solar Burst",
     "image": "/images/09.jpg",
+    "miniature": "/images/09_9.jpg",
     "price": 4074.33,
     "tag": "NEW"
   },
@@ -176,6 +185,7 @@
     "pickups": "1 Humbucker (bridge) and LR Baggs piezo pickup",
     "color": "Antique Ash",
     "image": "/images/10.jpg",
+    "miniature": "/images/10_10.jpg",
     "price": 5576.98,
     "tag": "NEW"
   }

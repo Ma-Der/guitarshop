@@ -3,9 +3,6 @@ import guitarData from '../../data/guitars.json';
 
 const initialState = { guitars: guitarData, pickedGuitar: {}, currentPage: 0, pages: 0, itemsOnPage: 2 };
 
-function paginateGuitars(guitars, itemsOnPage, currentPage) {
-  return guitars.slice(itemsOnPage * currentPage, itemsOnPage * (currentPage + 1));
-}
 const HomeReducer = function (state = initialState, action) {
   switch (action.type) {
 
@@ -16,7 +13,7 @@ const HomeReducer = function (state = initialState, action) {
       let guitars = guitarData;
       const pages = Math.ceil(guitars.length / state.itemsOnPage);
       const currentPage = action.currentPage !== undefined ? action.currentPage : 0;
-      guitars = paginateGuitars(guitars, state.itemsOnPage, currentPage);
+      guitars = guitars.slice(state.itemsOnPage * currentPage, state.itemsOnPage * (currentPage + 1));
       return {...state, guitars: guitars, pages: pages, currentPage: currentPage};
 
     default:

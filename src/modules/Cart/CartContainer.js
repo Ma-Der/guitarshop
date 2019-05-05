@@ -42,11 +42,11 @@ class CartContainer extends React.Component {
     console.log(this.props.cartGuitars);
     return (
       <div className="container">
-        <h1>Basket</h1>
+        <h1 className="cart-container-title">Basket</h1>
         {this.props.cartGuitars.length === 0 ?
           <div>
-          <h1>Empty.</h1>
-            <Link to="/"> Go back to shopping </Link>
+          <h3>Basket is empty.</h3>
+            <Link to="/" className="cart-container-back-shopping"><h4>Go back to shopping</h4></Link>
           </div>
             :
             <CartList toggle={this.toggle} products={this.props.cartGuitars} removeProductFromCart={this.removeFromCart} productAmount={this.productAmount} />

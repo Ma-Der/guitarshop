@@ -1,3 +1,28 @@
 .cart-list {
   justify-content: flex-start;
+  .cart-product {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .cart-product-price {
+    align-items: center;
+    justify-content: center;
+  }
+  .cart-product-amount {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.cart-summary-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.cart-summary {
+  background-color: rgba(150, 150, 150, 1);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
 }

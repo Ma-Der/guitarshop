@@ -1,3 +1,39 @@
 .cart-product {
   padding: 10px;
+  input[type=number] {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .cart-product-title {
+    margin: auto 0;
+    padding: 0 40px;
+  }
+}
+.amount-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart-item-price {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-product-input {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-width: 0;
+}
+.cart-product-button {
+  cursor: pointer;
+  width: 25px;
+  height: 50px;
+  padding: 0;
+  border: none;
+}
+.cart-product-delete-button {
+  background-color: #99ccff;
+  color: #ff3300;
+  width: 100%;
+  max-width: 100%;
 }

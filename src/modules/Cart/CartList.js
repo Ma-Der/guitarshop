@@ -5,9 +5,9 @@ const CartList = (props) => {
   return (
     <div className="container">
       <div className="row cart-list">
-        <div className="col-8">Item</div>
-        <div className="col-2">Amount</div>
-        <div className="col-2">Item Price</div>
+        <div className="col-8 cart-product">Item</div>
+        <div className="col-2 cart-product-amount">Amount</div>
+        <div className="col-2 cart-product-price">Item Price</div>
       </div>
       {
         props.products.map(product => <CartProduct
@@ -20,7 +20,9 @@ const CartList = (props) => {
                                         productAmount={props.productAmount}
                                       />)
       }
-      <button onClick={props.toggle}>Summary</button>
+      <div className="cart-summary-wrapper">
+        <button className="cart-summary" onClick={props.toggle}>Summary</button>
+      </div>
     </div>
   );
 }

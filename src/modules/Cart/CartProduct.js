@@ -23,7 +23,7 @@ const CartProduct = (props) => {
           <button onClick={() => props.removeFromCart(props.product.id)}>DELETE</button>
         </div>
         <div className="col-2">
-          {props.product.price}
+          {(props.product.price).toFixed(2)}
         </div>
       </div>
     </div>

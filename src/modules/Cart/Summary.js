@@ -6,10 +6,10 @@ const Summary = (props) => {
   console.log(props.products);
     return (
       <div className="container">
-        <div className="row">
-          <div className="col-8">You picked:</div>
-          <div className="col-2">Amount:</div>
-          <div className="col-2">Price:</div>
+        <div className="row summary-title">
+          <div className="col-8 summary-product-pick">You picked:</div>
+          <div className="col-2 summary-product">Amount:</div>
+          <div className="col-2 summary-product">Price:</div>
         </div>
           {props.products.map(item => <SumProduct
                                         key={item.guitar.id}
@@ -20,7 +20,7 @@ const Summary = (props) => {
                                       />
           )}
 
-        <div>Total Price: {(props.summary.totalPrice).toFixed(2)}</div>
+        <div className="total-price">Total Price: {(props.summary.totalPrice).toFixed(2)} zł</div>
       </div>
     );
 

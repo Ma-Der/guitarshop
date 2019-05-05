@@ -41,11 +41,11 @@ class CartContainer extends React.Component {
   render() {
     console.log(this.props.cartGuitars);
     return (
-      <div>
+      <div className="container">
         <h1>Basket</h1>
         {this.props.cartGuitars.length === 0 ?
           <div>
-            <h1>Empty.</h1>
+          <h1>Empty.</h1>
             <Link to="/"> Go back to shopping </Link>
           </div>
             :
@@ -54,7 +54,7 @@ class CartContainer extends React.Component {
         <Modal isOpen={this.state.modal} toggle={this.toggle} className="modal-sum">
           <ModalHeader id="modal-head" toggle={this.toggle}>Summary</ModalHeader>
           <ModalBody><Summary summary={this.props.summary} products={this.props.cartGuitars}/></ModalBody>
-          <ModalFooter>
+          <ModalFooter className="modal-footer">
             <button onClick={this.multiple}>BUY</button>
             <button onClick={this.toggle}>Cancel</button>
           </ModalFooter>

@@ -9,13 +9,13 @@ class Pagination extends React.Component {
   renderPagItem = () => {
     let pagItem = [];
     if(this.props.currentPage > 0) {
-      pagItem.push(<PaginationPage key={-1} currentPage={1} pages={this.props.pages} leftArrow={true} />);
+      pagItem.push(<PaginationPage key={-1} currentPage={1} pages={this.props.pages} leftArrow={true} sort={this.props.sort}/>);
     }
     for(let i=0; i < this.props.pages; i++) {
-      pagItem.push(<PaginationPage key={i} pages={this.props.pages} currentPage={i + 1} />);
+      pagItem.push(<PaginationPage key={i} pages={this.props.pages} currentPage={i + 1} sort={this.props.sort}/>);
     }
     if(this.props.pages - 1 > this.props.currentPage) {
-      pagItem.push(<PaginationPage key={this.props.pages + 1} pages={this.props.pages} currentPage={this.props.pages} rightArrow={true} />);
+      pagItem.push(<PaginationPage key={this.props.pages + 1} pages={this.props.pages} currentPage={this.props.pages} rightArrow={true} sort={this.props.sort}/>);
     }
     return pagItem;
   }

@@ -6,6 +6,10 @@ const PaginationPage = (props) => {
     <React.Fragment>
       {(() => {
         let path = [];
+        if(props.sort !== null) {
+          path.push(props.sort.by);
+          path.push(props.sort.direction);
+        }
         path.push(props.currentPage);
         let show;
         if(props.leftArrow !== undefined) {
@@ -17,7 +21,7 @@ const PaginationPage = (props) => {
         else show = () => props.currentPage;
 
         return (
-          <NavLink to={{pathname: `/pag/` + path.join("/")}} className="pagination-link" activeClassName="active">{show()}</NavLink>
+          <NavLink to={{pathname: `/p/` + path.join("/")}} className="pagination-link" activeClassName="active">{show()}</NavLink>
         );
       })()
       }

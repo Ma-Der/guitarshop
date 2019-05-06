@@ -5,10 +5,10 @@ const Header = () => {
   return (
     <div className="header">
       <div className="row">
-        <div className="name col-4">
+        <div className="name col-4 col-sm-6">
           <Link to='/' className="title">GUITAR SHOP</Link>
         </div>
-        <div className="menu col-8" >
+        <div className="menu col-8 col-sm-6" >
           <NavLink exact to='/' activeClassName="active">HOME</NavLink>
           <NavLink to='/faq' activeClassName="active">FAQ</NavLink>
           <NavLink to='/regulations' activeClassName="active">REGULATIONS</NavLink>

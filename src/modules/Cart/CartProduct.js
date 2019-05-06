@@ -4,14 +4,14 @@ const CartProduct = (props) => {
   return (
     <div className="container cart-product">
       <div className="row">
-        <div className="col-8 cart-product-image">
+        <div className="col-8 col-xl-8 col-lg-6 col-md-6 col-sm-4 col-mic-4 cart-product-image">
           <img src={props.product.miniature} alt={props.product.title}/>
           <div className="cart-product-title">
             {props.product.title}
           </div>
         </div>
 
-        <div className="col-2 amount-wrapper">
+        <div className="col-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-mic-4 amount-wrapper">
           <button className="cart-product-button" onClick={() => props.productAmount(props.product.id, props.guitarAmount - 1)}>-</button>
           <input
             className="cart-product-input"
@@ -24,7 +24,7 @@ const CartProduct = (props) => {
           <button className="cart-product-button" onClick={() => props.productAmount(props.product.id, props.guitarAmount + 1)}>+</button>
           <button className="cart-product-delete-button" onClick={() => props.removeFromCart(props.product.id)}>DELETE ITEM</button>
         </div>
-        <div className="col-2 cart-item-price">
+        <div className="col-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-mic-4 cart-item-price">
           <p>{(props.product.price).toFixed(2)} zł</p>
         </div>
       </div>

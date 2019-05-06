@@ -18,3 +18,10 @@
     color: #373831;
   }
 }
+
+@media (max-width: 992px) {
+  .guitar {
+    margin: 5px;
+    width: 350px;
+  }
+}

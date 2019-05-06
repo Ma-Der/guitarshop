@@ -26,8 +26,8 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home row" id="home">
-        <div className="col-2">
+      <div className="home row">
+        <div className="col-2 home-sort">
           <Sort sort={this.sort}/>
         </div>
         <div className="col-10 guitars-list">

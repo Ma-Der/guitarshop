@@ -14,3 +14,18 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    .footer-menu {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

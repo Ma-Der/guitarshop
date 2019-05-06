@@ -7,11 +7,9 @@ import { addToCart } from '../Cart/Cart.actions';
 class ProductContainer extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props.pickedGuitar);
   }
 
   componentDidMount() {
-    console.log(this.props.match.params.guitarId);
     this.props.getGuitar(parseInt(this.props.match.params.guitarId));
   }
 

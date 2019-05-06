@@ -3,3 +3,14 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+@media (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .home-sort {
+      justify-content: center;
+    }
+  }
+}

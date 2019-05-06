@@ -2,8 +2,8 @@ import React from 'react';
 
 const Product = ({pickedGuitar, addProductToCart}) => {
   return (
-    <div className="row">
-      <div className="col-2">
+    <div className="row product">
+      <div className="col-2 product-image">
         <img src={pickedGuitar.image} alt={pickedGuitar.title}/>
       </div>
       <div className="col-8 description">
@@ -26,7 +26,7 @@ const Product = ({pickedGuitar, addProductToCart}) => {
       <div className="col-2 product-buy">
         <h4 className="product-price">
           <div className="price-tag">Price:</div>
-          {pickedGuitar.price} zł
+          <p>{pickedGuitar.price} zł</p>
         </h4>
         <button className="product-add" onClick={() => addProductToCart(pickedGuitar)}><h3>Add To Cart</h3></button>
       </div>

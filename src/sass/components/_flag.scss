@@ -18,3 +18,9 @@
     text-transform: uppercase;
   }
 }
+
+@media(max-width: 576px) {
+  .flag {
+    bottom: 100px;
+  }
+}

@@ -20,7 +20,7 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   @for $i from 1 through 12 {
   	.col-xl-#{$i} {
   		width: ((100%/12) * $i);
@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   @for $i from 1 through 12 {
   	.col-lg-#{$i} {
   		width: ((100%/12) * $i);
@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   @for $i from 1 through 12 {
   	.col-md-#{$i} {
   		width: ((100%/12) * $i);
@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   @for $i from 1 through 12 {
   	.col-sm-#{$i} {
   		width: ((100%/12) * $i);
@@ -72,6 +72,20 @@
 
   @for $i from 0 through 11 {
   	.col-sm-offset-#{$i} {
+  		width: ((100%/12) * $i);
+  	}
+  }
+}
+
+@media (max-width: 430px) {
+  @for $i from 1 through 12 {
+  	.col-mic-#{$i} {
+  		width: ((100%/12) * $i);
+  	}
+  }
+
+  @for $i from 0 through 11 {
+  	.col-mic-offset-#{$i} {
   		width: ((100%/12) * $i);
   	}
   }

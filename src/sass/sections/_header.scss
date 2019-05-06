@@ -22,9 +22,24 @@
   }
 }
 
-
 .name {
   align-items: center;
   justify-content: flex-start;
   font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .menu {
+    letter-spacing: 4px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    a {
+
+    }
+  }
+  .name {
+    justify-content: center;
+    padding: 10px;
+  }
 }

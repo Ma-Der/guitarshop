@@ -11,3 +11,17 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 992px) {
+  .sort-container {
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    .sort-option {
+      padding: 0 10px;
+    }
+  }
+}

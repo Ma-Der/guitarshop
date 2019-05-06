@@ -42,7 +42,7 @@ class CartContainer extends React.Component {
     console.log(this.props.cartGuitars);
     return (
       <div className="container">
-        <h1 className="cart-container-title">Basket</h1>
+        <h1 className="component-title">Basket</h1>
         {this.props.cartGuitars.length === 0 ?
           <div>
           <h3>Basket is empty.</h3>

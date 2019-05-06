@@ -1,4 +1,4 @@
-import { PRICE, TITLE, ASC } from './sortVariables';
+import { TITLE, ASC } from './sortVariables';
 
 function compareTitleASC(a, b) {
   return a.title.localeCompare(b.title);

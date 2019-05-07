@@ -1,4 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Firebase Link:
+
+https://guitarshop-cf2ff.firebaseapp.com
+
+## INSTALL:
+
+Run:
+
+### `npm install`
 
 ## Available Scripts
 

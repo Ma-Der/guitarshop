@@ -8,6 +8,10 @@ Run:
 
 ### `npm install`
 
+## Link to commit:
+
+https://github.com/Ma-Der/guitarshop/commit/7ff89135fded8bbd7c15448705e17102984703ef
+
 ## Available Scripts
 
 In the project directory, you can run:

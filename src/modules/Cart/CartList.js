@@ -18,10 +18,21 @@ const CartList = (props) => {
                                         oldProductPrice={product.oldGuitarsPrice}
                                         removeFromCart={props.removeProductFromCart}
                                         productAmount={props.productAmount}
+                                        resetDiscount={props.resetDiscountCart}
                                       />)
       }
-      <div className="cart-summary-wrapper">
-        <button className="cart-summary" onClick={props.toggle}>Summary</button>
+      <div className="row">
+        <div className=" col-6 form-container">
+          <form>
+            <h3>Discount code: </h3>
+            {props.discount == null || props.discount === undefined || props.discount.isValid === undefined || props.discount.isValid ? null : <h4>{props.discount.errorMessage}</h4>}
+            <input type="text" className="" id="discount" />
+            <button className="cart-list-apply" type="button" onClick={() => props.addDiscount(document.getElementById('discount').value)}>Apply</button>
+          </form>
+        </div>
+        <div className=" col-6 cart-summary-wrapper">
+          <button className="cart-summary" onClick={props.toggle}>Summary</button>
+        </div>
       </div>
     </div>
   );

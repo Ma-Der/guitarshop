@@ -40,8 +40,9 @@ export function resetCart() {
   }
 }
 
-/*export function addDiscount(discountCode) {
-  type: ADD_DISCOUNT,
-  discountCode
+export function addDiscount(discountCode) {
+  return {
+    type: ADD_DISCOUNT,
+    discountCode
+  }
 }
-*/

@@ -6,6 +6,7 @@ export function changeAmount(item, amount) {
 
 export function countItemPrice(item) {
   item.guitarsPrice = item.guitar.price * item.guitarAmount;
+  item.oldGuitarsPrice = item.guitarsPrice;
   return item;
 }
 
@@ -14,6 +15,7 @@ export function addNewItem(array, item) {
     guitar: item,
     guitarAmount: 1,
     guitarsPrice: item.price,
+    oldGuitarsPrice: item.price
   };
   array.push(newItem);
   return array;
@@ -21,11 +23,14 @@ export function addNewItem(array, item) {
 
 function countSummaryPrice(array) {
   let summaryPrice = 0;
+  let prevSummaryPrice = 0;
   array.forEach(item => {
     summaryPrice += item.guitarsPrice;
+    prevSummaryPrice += item.oldGuitarsPrice;
   });
   return {
     summaryPrice,
+    prevSummaryPrice,
   };
 }
 
@@ -34,5 +39,6 @@ export function countSummary(products, prevSummary) {
   return {...prevSummary,
           price: sum.summaryPrice,
           totalPrice: sum.summaryPrice,
+          discount: sum.prevSummaryPrice - sum.summaryPrice
   };
 }

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import CartList from './CartList';
 import Summary from './Summary';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { resetDiscountCart } from '../../data/discountFunctions';
 
 class CartContainer extends React.Component {
   constructor(props) {
@@ -38,6 +39,13 @@ class CartContainer extends React.Component {
     this.props.productAmount(productId, value);
   }
 
+  addDiscount = discount => {
+    this.props.addDiscount(discount);
+  }
+  resetDiscount = cart => {
+    this.resetDiscountCart(cart);
+  }
+
   render() {
     console.log(this.props.cartGuitars);
     return (
@@ -49,7 +57,15 @@ class CartContainer extends React.Component {
             <Link to="/" className="cart-container-back-shopping"><h4>Go back to shopping</h4></Link>
           </div>
             :
-            <CartList toggle={this.toggle} products={this.props.cartGuitars} removeProductFromCart={this.removeFromCart} productAmount={this.productAmount} />
+            <CartList
+                    toggle={this.toggle}
+                    products={this.props.cartGuitars}
+                    removeProductFromCart={this.removeFromCart}
+                    productAmount={this.productAmount}
+                    addDiscount={this.addDiscount}
+                    discount={this.props.discount}
+                    resetDiscount={this.resetDiscountCart}
+            />
         }
         <Modal isOpen={this.state.modal} toggle={this.toggle} className="modal-sum">
           <ModalHeader id="modal-head" toggle={this.toggle}>Summary</ModalHeader>
@@ -68,7 +84,8 @@ class CartContainer extends React.Component {
 const mapStateToProps = function(store) {
   return {
     cartGuitars: store.CartReducer.cartGuitars,
-    summary: store.CartReducer.summary
+    summary: store.CartReducer.summary,
+    discount: store.CartReducer.discount
   };
 };
 

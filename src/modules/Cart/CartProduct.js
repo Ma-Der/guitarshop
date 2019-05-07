@@ -21,7 +21,10 @@ const CartProduct = (props) => {
             value={props.guitarAmount}
             onChange={(e) => props.productAmount(props.product.id, Number(e.target.value))}
           />
-          <button className="cart-product-button" onClick={() => props.productAmount(props.product.id, props.guitarAmount + 1)}>+</button>
+          <button className="cart-product-button" onClick={() => {
+                                                                  props.productAmount(props.product.id, props.guitarAmount + 1);
+                                                                  props.resetDiscount(props.product);
+                                                                }}>+</button>
           <button className="cart-product-delete-button" onClick={() => props.removeFromCart(props.product.id)}>DELETE ITEM</button>
         </div>
         <div className="col-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-mic-4 cart-item-price">

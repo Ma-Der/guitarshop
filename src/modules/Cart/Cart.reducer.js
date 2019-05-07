@@ -1,11 +1,13 @@
-import { ADD_TO_CART, REMOVE_FROM_CART, PRODUCT_AMOUNT, RESET_CART, GET_CART } from './Cart.actions';
+import { ADD_TO_CART, REMOVE_FROM_CART, PRODUCT_AMOUNT, RESET_CART, GET_CART, ADD_DISCOUNT } from './Cart.actions';
 import { changeAmount, countItemPrice, addNewItem, countSummary} from '../../data/CartFunctions';
+import { codeIsValidForCart, addDiscountToCart } from '../../data/discountFunctions';
 
 const initialState = {
   cartGuitars: [],
   summary: {
     price: 0,
-    totalPrice: 0
+    totalPrice: 0,
+    discount: 0,
   }
 }
 
@@ -53,6 +55,13 @@ const CartReducer = function(state = initialState, action) {
         }
       }
       return {...restartState};
+    case ADD_DISCOUNT:
+      let cart = {...state};
+      cart = codeIsValidForCart(action.discountCode, cart);
+      if(cart.discount.isValid) {
+        cart = addDiscountToCart(action.discountCode, cart);
+      }
+      return {...cart, discount: cart.discount, summary: countSummary(cart.cartGuitars, cart.summary)};
 
     default:
       return state;
